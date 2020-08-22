@@ -3,7 +3,7 @@ A noob-friendly script for linux that automatically installs Docker (if you don'
 
 ****NOTE:**** This script must be run with bash, not sh. For example: `bash elementzero.sh`
 
-###Instructions
+### Instructions
 1. Download elementzero.sh above
 2. Place it in a folder that you want your server to be installed in
 3. Run `bash elementzero.sh`
