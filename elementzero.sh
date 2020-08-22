@@ -91,7 +91,7 @@ export port="19132";
 fi
 read -p "Enter a name for the docker container (MyServer)> " containername
 if [ "containername" == "" ]; then
-export port="MyServer";
+export containername="MyServer";
 fi
 echo Creating start script
 echo "docker run --name $containername -d --rm -ti -p $port:$port/udp -v $PWD:/data codehz/wine:bdlauncher-runtime" >> start.sh
