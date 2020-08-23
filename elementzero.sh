@@ -82,6 +82,8 @@ cd ElementZero*
 sudo mv * ../
 cd ../
 rmdir ElementZero*
+sudo chown -R `sudo logname` *
+chmod -R 777 *
 echo =====================================
 echo Now we need to do some configuration...
 echo "If you don't know what you're doing, just click enter and accept the default."
@@ -104,4 +106,6 @@ echo 'To start it, run "sh start.sh"'
 echo 'To attach, run "docker attach $containername"'
 echo To detach, do CTRL+P and then CTRL+Q
 echo 'And to stop, Attach and then run "stop" in the server console.'
+echo IMPORTANT: If you just installed docker, you need to restart!
+echo If you're not sure, restart to be on the safe side.
 exit 0
